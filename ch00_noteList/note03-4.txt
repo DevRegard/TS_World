@@ -1,0 +1,12 @@
+* 구조화(structuring)
+ - 목적: 쉬운 구현, 코드의 기능 확장 수월
+ - 관련된 정보를 묶어 새로운 타입으로 표현 (ex: IPerson, ICompany)
+
+* 비구조화 할당(destructuring)
+ - 목적: 구조화된 데이터의 일부만 사용해기 위해
+ - let name = jack.name, age = jack.age
+ - let {name, age} = jack
+
+* 잔여 연산자 [...연산자]
+ - 잔여 연산자:
+ - 전개 연산자:   

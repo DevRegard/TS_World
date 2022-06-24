@@ -1,0 +1,17 @@
+[tsconfig.json]
+
+* 항목/구조
+ - compilerOptions 항목: tsc 명령 형식에서 옵션
+ - include 항목: 대상 파일 목록
+ - 키: 키값
+
+* 키/키값
+ - modules: 동작 대상 플랫폼(Web 혹은 NodeJs) -> 모듈 방식/컴파일(amd || commonjs)
+ - moduleResolution: (classic || node) mudiles값의 따라 설정
+ - target: 트랜스파일할 대상 JS version 설정 (es5 || es6)
+ - baseUrl, outDir: 트랜스파일된 ES5 -> 파일을 저장하는 디렉터리 설정
+ - paths: from 부분 해석할 때 찾아야 하는 디렉터리 설정
+ - exMuduleInterop: AMD 방식 전제로 구현된 라이브러리 -> 정상 동작 위해 true
+ - sourceMap: 트랜스파일 디렉터리에 .js 뿐만 아닌 '.js.map'도 생성 (소스맵 파일 디버깅 활용)
+ - downlevelIteration: '생성기 구문'의 정상 동작을 위해 true
+ - noImplicitAny: JS처럼 any타입으로 지정되도 문제로 표시하지 않도록 false

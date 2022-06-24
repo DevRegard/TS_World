@@ -1,0 +1,12 @@
+* 파일 생성
+touch -> Create TS file 
+/// touch [파일 이름]
+
+* 실행 과정 1
+tsc -> Trasfer TS to JS
+node -> Execute JS file
+/// touch -> tsc -> node
+
+* 실행 과정 2
+ts-node: tsc + node
+/// touch -> ts-node

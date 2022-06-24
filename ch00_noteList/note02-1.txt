@@ -1,0 +1,22 @@
+[타입스크립트 프로젝트 만들기]
+
+<생성자 관점>
+1) mkdir, cd    : 파일 생성 및 이동 
+2) npm init --y : packge.json 생성 
+3) npm i -D typescript ts-node  : 프로젝트 생성 후 설정 
+4) npm i -D @types/node         : @type 라이브러리 생성 
+5) mkdir -p src/utils           : tsconfig.json 설정대로 프로젝트 구성 위해
+6) touch src/index.ts [src/utils/모듈 이름.ts] 
+
+<이용자 관점>
+0) 다른 사람에게 전달할 때, 'node-modules' 지우고 전송
+1) node-mudiles 디렉터리 설치: npm i
+2) tsconfig.json 생성: npm init
+3) 필요한 기능 설정: 설정된 파일 복붙
+4) ? : mkdir -p src/utils
+5) ? : touch src/index.ts
+6) package.json 수정: Add [dev, build] in script
+
+<프로그램 실행>
+npm run dev     : src/index.ts 컴파일 후 실행 
+npm run duild   : dist 디텍터리 +ES5 생성 후 실행 
